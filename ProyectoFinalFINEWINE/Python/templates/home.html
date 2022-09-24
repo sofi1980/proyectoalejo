@@ -1,0 +1,177 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+   {% block content %}
+   <header class="col-sm-6" id="hero">
+
+      <section class="hero__container container">
+          <h1 class="col-sm-12" id="hero__title">El vino moderado es salud para el cuerpo y alegría para el alma.</h1>
+          <p class="hero__paragraph"></p>
+          <a href="contactanos.html" class="col-sm-2" id="cta">Comienza ahora</a>
+      </section>
+
+  </header>
+
+  <div class="card-group">
+      <h2 class="col-sm-12" id="subtitle">Obten la oferta perfecto</h2>
+
+      <div class="col-sm-4" id="card">
+          <img class="imagenv" src="{% static 'img/vino_1.png'%}">
+          <div class="card-body">
+              <h5 class="card-title">Vino Tinto Ramón Bilbao Reserva Tempranillo Graciano Mazuelo</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="#" id="price__cta">Agregar al carrito</a>
+          </div>
+      </div>
+
+      <div class="col-sm-4" id="card">
+          <img class="imagenv" src="{% static 'img/vino_2.png'%}" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Vino Rosado Ramón Bilbao Reserva Garnacha Viura</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="#" id="price__cta">Agregar al carrito</a>
+          </div>
+      </div>
+
+      <div class="col-sm-4" id="card">
+          <img class="imagenv" src="{% static 'img/vino_3.png'%}" alt="">
+          <div class="card-body">
+              <h5 class="card-title">Vino Rosado Ramón Bilbao Reserva Garnacha Viura</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="#" id="price__cta">Agregar al carrito</a>
+          </div>
+      </div>
+
+  </div>
+
+  <main>
+
+      <section class="portafolio"><br><br><br>
+          <div>
+              <h2 class="titulo">Portafolio</h2>
+              <div class="galeria-port">
+                  <div class="imagen-port">
+                      <img src="{% static 'img/vino1.webp'%}" alt="">
+                      <div class="hover-galeria">
+                          <img src="{% static 'img/icono1.png'%}" alt="">
+                          <p>Semi-Crianza</p>
+                      </div>
+                  </div>
+
+                  <div class="imagen-port">
+                      <img src="{% static 'img/vino2.png'%}" alt="">
+                      <div class="hover-galeria">
+                          <img src="{% static 'img/icono1.png'%}" alt="">
+                          <p>Crianza</p>
+                      </div>
+                  </div>
+                  <div class="imagen-port">
+                      <img src="{% static 'img/vino3.png'%}" alt="">
+                      <div class="hover-galeria">
+                          <img src="{% static 'img/icono1.png'%}" alt="">
+                          <p>Reserva</p>
+                      </div>
+                  </div>
+                  <div class="imagen-port">
+                      <img src="{% static 'img/vino4.png'%}" alt="">
+                      <div class="hover-galeria">
+                          <img src="{% static 'img/icono1.png'%}" alt="">
+                          <p>Gran Reserva</p>
+                      </div>
+                  </div>
+              </div>
+          </div> <br>
+      </section> <br><br><br>
+
+
+
+      <section class=" knowledge">
+          <div class="knowledge__container container">
+              <div class="knowledege__texts">
+                  <h2 class="subtitle">Aprende un poco sobre nuestros vinos</h2>
+                  <p class="knowledge__paragraph">Aqui puedesadentrarte en el mundo del vino, viendo una vision
+                      diferente a como se platica cotidianamente,
+                      que mas que lo puedas hacer con nuestros recursos, creados especialmente para ti.
+                      </a>
+              </div>
+
+              <figure class="knowledge__picture">
+                  <img src="{% static 'img/aprendevino-02.jpg'%}" class="knowledge__img">
+              </figure>
+          </div>
+      </section>
+      <div class="preguntas">
+          <section class="questions container">
+              <h2 class="subtitle">Preguntas frecuentes</h2>
+              <p class="questions__paragraph">Algunos de nuestros usuarios nos brindan inquietudes que nos sirven para
+                  mejorar cada dia en la comunidad Fine Wine.</p>
+
+              <section class="questions__container">
+                  <article class="questions__padding">
+                      <div class="questions__answer">
+                          <h3 class="questions__title">¿Por qué importa tanto oler el vino?
+                              <span class="questions__arrow">
+                                  <img src="{% static 'img/1er usu.jpg'%}" class="questions__img">
+                              </span>
+                          </h3>
+
+                          <p class="questions__show">Una buena parte del placer de beber vino se basa en su olor.
+                              En una copa de vino puede haber varios aromas afrutados, <br> florales o terrosos.
+                              Y eso puede cambiar dependiendo del tiempo que se deje abierto.
+
+                          </p>
+                      </div>
+                  </article>
+
+                  <article class="questions__padding">
+                      <div class="questions__answer">
+                          <h3 class="questions__title">¿Qué es la levadura en el vino?
+                              <span class="questions__arrow">
+                                  <img src="{% static 'img/usu doña.png'%}" class="questions__img">
+                              </span>
+                          </h3>
+
+                          <p class="questions__show">Es un hongo microscópico responsable de digerir el azúcar y que
+                              desprende alcohol.
+                              La levadura se añade <br> al vino durante el proceso de fermentación. Cuando ha
+                              terminado de
+                              comer todo el
+                              azúcar de la botella, muere.</p>
+                      </div>
+                  </article>
+
+                  <article class="questions__padding">
+                      <div class="questions__answer">
+                          <h3 class="questions__title">¿Los tapones de rosca indican que el vino es barato?
+                              <span class="questions__arrow">
+                                  <img src="{% static 'img/doña 2.png'%}" class="questions__img">
+                              </span>
+                          </h3>
+
+                          <p class="questions__show">¡Nada de eso! Aunque la falta de corcho lleva el estigma de un
+                              vino
+                              barato,
+                              los países como Nueva Zelanda han <br> sufrido recientemente la transición hacia el
+                              tapón de
+                              rosca tras
+                              quedar hartos de los malos corchos.</p>
+                      </div>
+                  </article>
+              </section>
+      </div>
+      <div class="mas col-sm-6">
+          <section class="questions__container">
+              <h2 class="subtitle">¿Listo para aprender un poco mas sobre Fine Wine?</h2>
+              <p class="questions__copy">Fine wine es una empresa que surgio de una union familiar,
+                  la que el objetivo siempre seria brindar calidad en cada producto que el cliente
+                  llevase a su hogar, surge en el año 2007 como un emprendimiento pequeño donde fue
+                  surgiendo cada idea para poder evolucionar en la industria,comenzamos con una pequeña
+                  sede en antioquia, donde hoy es la sede principal de Fine Wine</p>
+              <a href="#" class="cta2">Hazlo ahora</a>
+          </section>
+
+      </div>
+
+  </main>
+    {% endblock %}

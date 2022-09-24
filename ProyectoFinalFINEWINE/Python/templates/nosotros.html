@@ -1,0 +1,125 @@
+{%extends 'base.html' %}
+{% block content %}
+{%load static%}
+<header>
+    <div class="contenedor2">
+      <h1><span class="resaltado">¿Que es Fine Wine?</span></h1>
+      <!-- carrucel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/yas.gif'%}" class="carru">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/yes.gif'%}" class="carru">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/yea.gif'%}" class="carru">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="principal">
+    <div class="contenedor">
+      <article id="col-principal"><br>
+        <h1> Fine Wine</h1> <br><br>
+
+        <p>Es una empresa que ha logrado aplicar criterios unicos de excelencia en el criterio de abordaje
+          de sus productos(vinos), se caracteriza por mantener una buena relacion entre calidad, costo y plazo de
+          entrega,
+          personaliza la marca para poder abordar las nuevas necesidades del mercado y siempre brindar la mejor calidad
+        </p>
+        <p>Nace con el fin de brindar un producto de calidad,llegar a los hogares
+          a festejar con una buena bebida, a brindar en pareja por el fruto de los años y del momento
+          , traer al presente recuerdos y al futuro ansias, de libertad, felicidad, energia, nitidez, pasion, de pasar
+          un buen resaltado
+          disfrutrando de lo simple con el simple hecho de tomar una bebida inigualable, refrescare el paladar nuestros
+          clientes
+          y darles a conocer y beber un producto sano, y bien elaborado fue el primer por que de fines wine.
+        </p>
+        <video src="video/SPOT PUBLICITARIO _ VINOS PIEDRA FLUIDA.mp4" width=720 height=500 controls autoplay loop>
+          Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
+          La versión descargable está disponible en <a href="URL">Enlace</a>.
+        </video>
+      </article>
+      <aside id="lateral">
+        <div class="oscuro">
+          <h1 class="quien"> Mision </h1>
+          <p> Lograr el orden especifico de los archivos que accedan a nuestra nube,
+            cada usuario que ingrese a nuestra plataforma obtendrá ayuda para que
+            escoja en el orden que quiere tener sus archivos.</p>
+        </div>
+      </aside>
+      <aside id="lateral1">
+        <div class="oscuro">
+          <h1 class="quien"> Vision </h1>
+          <p> Ser lideres en la organización y seguridad archivística a través de la plataforma de
+            almacenamiento virtual,
+            prestar servicios de calidad a nuestros clientes y generar impacto en la sociedad con nuestros
+            colaboradores
+            y nuestra plataforma.</p>
+        </div>
+      </aside>
+    </div>
+  </section><br>
+    <h1 class="proceso">Proceso de Nuestros vinos</h1><br>
+    <div class="card-group">
+      <div class="card">
+        <img src="{% static 'img/vendimia.jpg'%}" class="info" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">La vendimia</h5>
+          <p class="card-text">La vendimia es la cosecha de la uva que
+            tradicionalmente se realiza en España entre los meses de
+            septiembre y octubre.<a
+              href="https://vivancoculturadevino.es/blog/2016/06/14/proceso-de-elaboracion-del-vino-tinto/">saber
+              mas...</a></p>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/despalillado.jpg" class="info" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Despalillado</h5>
+          <p class="card-text">El proceso de despalillado es aquel mediante
+            el cual se separan las uvas del resto del racimo, lo que se conoce
+            como raspón.
+            <a href="https://vivancoculturadevino.es/blog/2016/06/14/proceso-de-elaboracion-del-vino-tinto/">saber
+              mas...</a>.</p>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/estrujado.jpg" class="info" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Estrujado</h5>
+          <p class="card-text">Una vez desgranado el racimo, los granos de uva
+            se pasan por una máquina estrujadora o pisadora. <a
+              href="https://vivancoculturadevino.es/blog/2016/06/14/proceso-de-elaboracion-del-vino-tinto/">saber
+              mas...</a></p>
+
+        </div>
+      </div>
+
+    </div><br>
+    <div><a class="ver1" href="https://youtu.be/5o5RnrcdEcg" role="button">Ver mas</a></div>
+    {% endblock %}
